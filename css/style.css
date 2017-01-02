@@ -27,7 +27,7 @@ font-size: 400%;
   min-height: 10vh;
   padding: 15px;
   margin-top: 0px;
-  margin-left: 0px;
+  margin-left: px;
   margin-right: 0px;
   margin-bottom: 0px;
   border: 0px;
@@ -96,10 +96,11 @@ text-align: center;
   list-style: none;
   margin: 0;
   padding: 0;
+  border: 2px solid rgba(18%, 70.2%, 9.8%, 0.8);
 }
 .img-content{
   display: flex;
-  border: 1px solid rgba(100%, 100%, 100%, 0.8);
+
   /* The below scales the image dynamically */
   /* ("How Can I Resize An Image Dynamically With CSS As The Browser Width/Height Changes?") */
   max-width: 100%;
