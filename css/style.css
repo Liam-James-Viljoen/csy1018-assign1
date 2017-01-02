@@ -1,0 +1,224 @@
+/* Generic tags */
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+h2 {
+  font-family: 'Lobster Two', cursive;
+  text-align: left;
+  text-decoration: underline;
+}
+
+/* Header section */
+.header-text{
+color: #F9F9F9;
+text-align: center;
+font-family: 'Lobster', cursive;
+font-size: 400%;
+}
+.header-wrapper{
+  display: block;
+  flex-direction: column;
+  order: 1;
+  background-color: #801515;
+  /* background-color: #AA3939; */
+  min-height: 10vh;
+  padding: 15px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  border: 0px;
+  border-color: #000000;
+}
+
+/* Navigation bar */
+.navigation-bar{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+order: 2;
+background-color: #AA3939;
+padding: 15px;
+margin-top: 0;
+margin-left: 0px;
+margin-right: 0px;
+margin-bottom: 15px;
+border: 0px;
+}
+.nav-content {
+display: inline-block;
+padding: 5px;
+margin: 5px;
+background-color: #FFAAAA;
+min-width: 100px;
+max-width: 100px;
+min-height: 20px;
+max-height: 20px;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+/* main content */
+.main-aside-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 auto;
+  order: 3;
+  padding 15px;
+  margin: 0px;
+  margin-bottom: 15px;
+}
+.main-text-wrapper{
+  color: #000000;
+  background-color: #FFAAAA;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  padding: 10px;
+}
+.aside-text-wrapper{
+  color: #000000;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  background-color: #D46A6A;
+  padding: 10px;
+}
+/* Picture content & format */
+.main-img-wrapper{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.img-content{
+  display: flex;
+  border: 1px solid rgba(100%, 100%, 100%, 0.8);
+  /* The below scales the image dynamically */
+  /* ("How Can I Resize An Image Dynamically With CSS As The Browser Width/Height Changes?") */
+  max-width: 100%;
+  height: auto;
+}
+/* Footer section */
+.footer-text-wrapper{
+  /*  Text custom */
+  color: #000000;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 90%;
+  background-color: #AA3939;
+
+  /* Format */
+  order: 4;
+  min-height: 5vh;
+  padding: 15px;
+  margin-top: 15px;
+  margin: 0px;
+}
+
+/* Link styling */
+a:link { /* unvisited link - ("CSS Styling Links") */
+color: #000000;
+font-family: 'Open Sans', sans-serif;
+font-size: 100%;
+}
+a:hover { /* mouse over link - ("CSS Styling Links") */
+color: #F9F9F9;
+font-size: 100%;
+font-family: 'Open Sans', sans-serif;
+}
+a:active{
+  color: #F9F9F9;
+}
+
+/* Media query section */
+
+/* Media queries allow you to set what happens at a set viewpoint e.g. 480p.
+Means you can set how devices display your page*/
+/* if viewport is smaller than 30em */
+/* This puts them into a column format if the viewport is to small to show the nav and main column
+side by side */
+/* 10px	= 0.625em	= 62.5% - ("Pxtoem.Com: PX To EM Conversion Made Simple.")*/
+
+
+@media (max-width: 30em /* =900px */) {
+  /* Header */
+  .header-text{
+      display: block;
+      order: 0;
+    }
+
+  /* Navigation bar */
+  .navigation-bar{
+    display:flex;
+    flex-direction: column;
+    order: 1;
+    justify-content: center;
+    align-items: center;
+  }
+    .nav-content{
+      display: flex;
+    }
+
+  /* main content */
+  .main-aside-wrapper {
+    flex: 1 0 auto;
+      display: block;
+    }
+    .main-text-wrapper{
+      display: flex;
+      flex-direction: column;
+      order: 2;
+      min-height: 20vh;
+      max-height: auto;
+    }
+    .aside-text-wrapper{
+      display: flex;
+      flex-direction: column;
+      order: 3;
+      max-height: auto;
+    }
+  /* Img content */
+
+  /* footer */
+  .footer-text-wrapper{
+    flex-direction: column;
+    order: 4;
+    min-height: 8vh;
+    max-height: 8vh;
+    margin: 15px;
+  }
+}
+
+/* if viewport is larger than 30 em */
+@media (min-width: 30em){
+  .header-text {
+    display: block;
+  }
+  .main-aside-wrapper {
+    flex-direction: row;
+  }
+  .main-text-wrapper {
+    flex: 1 1 auto;
+    width: 60;
+  }
+  .aside-text-wrapper {
+    width: 40%; /*changes the width of .aside*/
+  }
+}
+
+/* Bibliography */
+/*
+
+1.  "CSS Styling Links". W3schools.com. Web. 8 Dec. 2016.
+2.  "Pxtoem.Com: PX To EM Conversion Made Simple.". Pxtoem.com. Web. 28 Nov. 2016.
+3.  "Paletton - The Color Scheme Designer". Paletton.com. Web. 8 Dec. 2016.
+4.  "How Can I Resize An Image Dynamically With CSS As The Browser Width/Height Changes?". Stackoverflow.com. Web. 10 Dec. 2016.
+
+*/
