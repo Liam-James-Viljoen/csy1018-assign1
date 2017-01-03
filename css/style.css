@@ -71,7 +71,8 @@ text-align: center;
   order: 3;
   padding 15px;
   margin: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 15px;#
+  border: 5px solid rgba(18%, 70.2%, 9.8%, 0.8);
 }
 .main-text-wrapper{
   color: #000000;
