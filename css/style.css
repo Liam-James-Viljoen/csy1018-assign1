@@ -36,8 +36,10 @@ font-size: 400%;
 
 /* Navigation bar */
 .navigation-bar{
-display: flex;
+/*display: flex;
 flex-direction: column;
+*/
+
 justify-content: center;
 align-items: center;
 order: 2;
@@ -50,18 +52,53 @@ margin-bottom: 15px;
 border: 0px;
 }
 .nav-content {
-display: inline-block;
+display: flex;
+flex-flow: wrap;
 padding: 5px;
 margin: 5px;
 background-color: #FFAAAA;
+/*
 min-width: 100px;
 max-width: 100px;
 min-height: 20px;
 max-height: 20px;
+
 justify-content: center;
-align-items: center;
+*/
+justify-content: center;
 text-align: center;
 font-weight: bold;
+flex-grow: 1;
+}
+
+.Button1{
+  display: flex;
+  text-align: center;
+}
+.Button2{
+  display: flex;
+  text-align: center;
+}
+.Button3{
+  display: flex;
+  text-align: center;
+}
+.Button4{
+  display: flex;
+  text-align: center;
+}
+
+.Button1:hover{
+  background-color:rgba(18%, 70.2%, 9.8%, 0.8);
+}
+.Button2:hover{
+  background-color:rgba(18%, 70.2%, 9.8%, 0.8);
+}
+.Button3:hover{
+  background-color:rgba(18%, 70.2%, 9.8%, 0.8);
+}
+.Button4:hover{
+  background-color:rgba(18%, 70.2%, 9.8%, 0.8);
 }
 
 /* main content */
@@ -123,6 +160,13 @@ font-weight: bold;
   padding: 15px;
   margin-top: 15px;
   margin: 0px;
+}
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 5px;
+  background-color: #FFAAAA;
 }
 
 /* Link styling */
