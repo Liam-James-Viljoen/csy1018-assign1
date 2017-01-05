@@ -151,13 +151,44 @@ border: 4px solid #F9F9F9;
   padding: 15px;
   margin-top: 15px;
   margin: 0px;
+  display:flex;
+  /*The following link was used to get the footer boxs to move and scale as neccesery*/
+  /*("A Complete Guide To Flexbox | CSS-Tricks")*/
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.footer-box {
+.footer-box1 {
   display: flex;
-  flex-direction: column;
-  margin: 0px;
+  flex-grow: 1;
   padding: 5px;
   background-color: #FFAAAA;
+  justify-content: center;
+  flex-flow: row;
+  margin: 1px;
+}
+.footer-box2 {
+  display: flex;
+  flex-grow: 1;
+  padding: 5px;
+  background-color: #FFAAAA;
+  justify-content: center;
+  margin: 1px;
+}
+.footer-box3 {
+  display: flex;
+  flex-grow: 1;
+  padding: 5px;
+  background-color: #FFAAAA;
+  justify-content: center;
+  margin: 1px;
+}
+.footer-box4 {
+  display: flex;
+  flex-grow: 1;
+  padding: 5px;
+  background-color: #FFAAAA;
+  justify-content: center;
+  margin: 1px;
 }
 
 /* Link styling */
@@ -230,7 +261,11 @@ side by side */
     margin: 0px;
     padding: 5px;
   }
-  .footer-box{
+  .footer-box1{
+  margin: 1px;
+  padding: 1px;
+  }
+  .footer-box2{
   margin: 1px;
   padding: 1px;
   }
@@ -260,5 +295,6 @@ side by side */
 2.  "Pxtoem.Com: PX To EM Conversion Made Simple.". Pxtoem.com. Web. 28 Nov. 2016.
 3.  "Paletton - The Color Scheme Designer". Paletton.com. Web. 8 Dec. 2016.
 4.  "How Can I Resize An Image Dynamically With CSS As The Browser Width/Height Changes?". Stackoverflow.com. Web. 10 Dec. 2016.
+5.  "A Complete Guide To Flexbox | CSS-Tricks". CSS-Tricks. Web. 5 Jan. 2017.
 
 */
