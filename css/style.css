@@ -81,7 +81,7 @@ border: 4px solid #F9F9F9;
 }
 
 .button1:hover{
-    border: 4px solid rgba(18%, 70.2%, 9.8%, 0.8);
+    border: 4px solid rgba(18%, 70.2%, 9.8%, 0.8)
 }
 .button2:hover{
     border: 4px solid rgba(18%, 70.2%, 9.8%, 0.8);
@@ -193,15 +193,12 @@ side by side */
     }
 
   /* Navigation bar */
-  .navigation-bar{
-    display:flex;
-    flex-direction: column;
-    order: 1;
-    justify-content: center;
-    align-items: center;
-  }
-    .nav-content{
-      display: flex;
+    .button-wrapper{
+      display:flex;
+      flex-direction: column;
+      order: 1;
+      justify-content: center;
+      flex-grow: 1;
     }
 
   /* main content */
@@ -229,8 +226,13 @@ side by side */
     flex-direction: column;
     order: 4;
     min-height: 8vh;
-    max-height: 8vh;
+    max-height: auto;
     margin: 0px;
+    padding: 5px;
+  }
+  .footer-box{
+  margin: 1px;
+  padding: 1px;
   }
 }
 
