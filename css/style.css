@@ -13,14 +13,16 @@ h2 {
 
 /* Header section */
 .header-text{
+display: flex;
+flex-direction: row;
 color: #F9F9F9;
-text-align: center;
+justify-content: center;
 font-family: 'Lobster', cursive;
 font-size: 400%;
 }
 .header-wrapper{
-  display: block;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   order: 1;
   background-color: #801515;
   /* background-color: #AA3939; */
@@ -107,7 +109,7 @@ border: 4px solid #F9F9F9;
   color: #000000;
   background-color: #FFAAAA;
   text-align: left;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lobster Two', cursive;
   font-size: 120%;
   padding: 10px;
 }
@@ -218,6 +220,18 @@ a:active{
   font-family: 'Open Sans', sans-serif;
 }
 
+/* Logo picture*/
+.logo-img-content{
+width: 50px;
+height: 50px;
+}
+.logo-img-wrapper{
+  justify-content: flex-start;
+  list-style: none;
+  margin: 10px;
+  padding: 0px;
+
+}
 
 /* Media query section */
 
