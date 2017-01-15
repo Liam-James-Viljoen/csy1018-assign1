@@ -206,6 +206,19 @@ a:active{
   color: #F9F9F9;
 }
 
+
+/* text highlight */
+.highlight{
+  color:black;
+  font-weight: bold;
+}
+
+/* Form */
+.Form-group{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
 /* Media query section */
 
 /* Media queries allow you to set what happens at a set viewpoint e.g. 480p.
